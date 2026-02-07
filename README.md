@@ -22,7 +22,7 @@ This Google Chrome extension provides a quick and user friendly interface for co
 
 6. **Tooltip Information** An informationicon is located on every metric card. Hovering over this icon displays the specific conversion rate or formula used.
 
-\*\* File Structure
+## File Structure
 
 - **manifest.json** Configuration file required by Chrome to define permissions, version, and entry points.
 
@@ -32,7 +32,7 @@ This Google Chrome extension provides a quick and user friendly interface for co
 
 - **popup.js** Handles the application logic, mathematical calculations, DOM manipulation, and local storage management.
 
-\*\* Installation Instructions
+## Installation Instructions
 
 1. Download the source code to a folder on your computer.
 
@@ -48,7 +48,7 @@ This Google Chrome extension provides a quick and user friendly interface for co
 
 7. The extension is now installed and will appear in your browser toolbar.
 
-\*\* Usage Guide
+## Usage Guide
 
 1. **Converting Numbers** Click the extension icon, enter a number in the input field, and click the Convert button. The results will populate in the list view below.
 
@@ -56,5 +56,5 @@ This Google Chrome extension provides a quick and user friendly interface for co
 
 3. **Customizing Metrics** Click the gear icon to open the settings panel. Select exactly three metrics from the available list and click Save to update your view.
 
-\*\* Browser Support
+## Browser Support
 This extension is designed for Google Chrome and Chromium based browsers (such as Edge or Brave) that support Manifest V3.
