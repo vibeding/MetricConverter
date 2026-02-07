@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Unit Converter</title>
+        <link rel="stylesheet" href="popup.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h3>Metric/Imperial Unit Conversion</h3>
+                <div class="header-controls">
+                    <button id="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
+                    <button id="settings-toggle" aria-label="Settings">⚙️</button>
+                </div>
+            </header>
+
+            <div class="input-section">
+                <input type="number" id="input-el" placeholder="Enter number (e.g., 20)">
+                <button id="convert-btn">Convert</button>
+            </div>
+
+            <div id="results-container">
+                </div>
+            
+            <div id="settings-panel" class="hidden">
+                <h4>Select 3 Metrics</h4>
+                <div id="metrics-options">
+                    </div>
+                <p id="settings-error" class="error-msg"></p>
+                <button id="save-settings">Save & Close</button>
+            </div>
+        </div>
+        <script src="popup.js"></script>
+    </body>
+</html>

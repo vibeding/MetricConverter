@@ -1,0 +1,59 @@
+:root {
+  --bg-color: #f4f4f4;
+  --text-color: #333;
+  --card-bg: #fff;
+  --accent-color: #6200ea;
+  --accent-hover: #3700b3;
+  --input-border: #ccc;
+  --tooltip-bg: #333;
+  --tooltip-text: #fff;
+}
+
+[data-theme="dark"] {
+  --bg-color: #1f1f1f;
+  --text-color: #e0e0e0;
+  --card-bg: #2d2d2d;
+  --accent-color: #bb86fc;
+  --accent-hover: #9965f4;
+  --input-border: #444;
+  --tooltip-bg: #fff;
+  --tooltip-text: #000;
+}
+
+body {
+  width: 350px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 15px;
+  transition: background 0.3s, color 0.3s;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h3 { margin: 0; font-size: 1.1rem; }
+h4 { margin-bottom: 10px}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 1.2rem;
+    color: var(--text-color)
+}
+
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex-grow: 1;
+}
