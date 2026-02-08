@@ -56,4 +56,102 @@ button {
 
 input {
     flex-grow: 1;
+    padding: 10px;
+    border: 1px solid var(--input-border);
+    border-radius: 5px;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    font-size: 1rem;
 }
+
+#convert-btn, #save-settings {
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: background 0.2s;
+}
+
+#convert-btn:hover, #save-settings:hover {
+    background-color: var(--accent-hover);
+}
+
+/* Result Cards */
+.metric-card {
+    background-color: var(--card-bg);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:  8px;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.result-text{
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+/* Tooltip (The i icon) */
+.info-icon {
+    font-size: 0.8rem;
+    border: 1px solid var(--text-color);
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: help;
+    position: relative;
+}
+
+.info-icon:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: -30px;
+  right: 0;
+  background-color: var(--tooltip-bg);
+  color: var(--tooltip-text);
+  padding: 5px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Settings Panel */
+#settings-panel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-color);
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 20;
+}
+
+.hidden { display: none; }
+
+.option-row {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.error-msg { color: #ff5252; font-size: 0.8rem; height: 1rem;}
